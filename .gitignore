@@ -1,0 +1,98 @@
+# =========================
+# Operating System Files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Editor Files
+# =========================
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+
+
+# =========================
+# Temporary Files
+# =========================
+
+*.tmp
+*.temp
+*.log
+
+
+# =========================
+# Node / Web Development
+# =========================
+
+node_modules/
+dist/
+build/
+
+
+# =========================
+# Python (future projects)
+# =========================
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+.venv/
+venv/
+
+
+# =========================
+# Environment / Secrets
+# =========================
+
+.env
+.env.*
+
+
+# =========================
+# Website Development
+# =========================
+
+.cache/
+
+
+
+
+# =========================
+# Generated Files
+# =========================
+
+*.zip
+*.tar.gz
+
+
+# =========================
+# OS Metadata
+# =========================
+
+.Trashes
+ehthumbs.db
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# OS files
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/

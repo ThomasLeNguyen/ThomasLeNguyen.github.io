@@ -1,0 +1,531 @@
+/* =========================================================
+   Thomas Thuan Le Nguyen - Academic Website
+========================================================= */
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+
+  background: #fafafa;
+
+  color: #111827;
+
+  line-height: 1.7;
+
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+
+  display: block;
+}
+
+a {
+  color: #2563eb;
+
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+a:hover {
+  color: #1e40af;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.layout {
+  display: flex;
+
+  min-height: 100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  position: fixed;
+
+  width: 300px;
+
+  height: 100vh;
+
+  background: white;
+
+  border-right: 1px solid #e5e7eb;
+
+  padding: 45px 35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 150px;
+
+  height: 150px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin: 0 auto 25px;
+
+  border: 3px solid #f3f4f6;
+}
+
+.profile h1 {
+  font-size: 1.35rem;
+
+  font-weight: 700;
+
+  color: #111827;
+
+  line-height: 1.3;
+}
+
+.subtitle {
+  color: #6b7280;
+
+  margin-top: 10px;
+
+  font-size: 0.95rem;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.sidebar nav {
+  margin-top: 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.sidebar nav a {
+  color: #374151;
+
+  padding: 10px 15px;
+
+  border-radius: 8px;
+
+  font-weight: 500;
+}
+
+.sidebar nav a:hover {
+  background: #f3f4f6;
+}
+
+.sidebar nav a.active {
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.sidebar-links {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  font-size: 0.95rem;
+}
+
+.sidebar-links a {
+  color: #6b7280;
+}
+
+.sidebar-links a:hover {
+  color: #2563eb;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content {
+  margin-left: 300px;
+
+  width: calc(100% - 300px);
+
+  padding: 70px 90px;
+
+  max-width: 1100px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding-top: 30px;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+
+  color: #111827;
+}
+
+.hero h3 {
+  font-size: 1.4rem;
+
+  color: #2563eb;
+
+  font-weight: 600;
+
+  margin-bottom: 25px;
+}
+
+.hero p {
+  max-width: 750px;
+
+  margin-bottom: 18px;
+
+  color: #374151;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2 {
+  font-size: 2rem;
+
+  margin-bottom: 25px;
+
+  color: #111827;
+}
+
+h3 {
+  color: #111827;
+}
+
+section > p {
+  max-width: 800px;
+
+  color: #374151;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+  margin-top: 30px;
+
+  display: flex;
+
+  gap: 15px;
+}
+
+.button {
+  display: inline-block;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  border: 1px solid #d1d5db;
+
+  color: #111827;
+
+  background: white;
+
+  font-weight: 500;
+}
+
+.button:hover {
+  background: #f9fafb;
+}
+
+.button.primary {
+  background: #2563eb;
+
+  border-color: #2563eb;
+
+  color: white;
+}
+
+.button.primary:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 25px;
+}
+
+.card {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  padding: 25px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #4b5563;
+
+  margin-bottom: 15px;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+  list-style: none;
+
+  border-left: 2px solid #e5e7eb;
+
+  padding-left: 25px;
+}
+
+.timeline li {
+  margin-bottom: 25px;
+
+  color: #374151;
+
+  position: relative;
+}
+
+.timeline li::before {
+  content: "";
+
+  width: 10px;
+
+  height: 10px;
+
+  background: #2563eb;
+
+  border-radius: 50%;
+
+  position: absolute;
+
+  left: -31px;
+
+  top: 9px;
+}
+
+.timeline strong {
+  display: block;
+
+  color: #111827;
+
+  margin-bottom: 5px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  border-top: 1px solid #e5e7eb;
+
+  padding-top: 25px;
+
+  color: #6b7280;
+
+  font-size: 0.9rem;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+  .layout {
+    display: block;
+  }
+
+  .sidebar {
+    position: relative;
+
+    width: 100%;
+
+    height: auto;
+
+    border-right: none;
+
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .sidebar-links {
+    flex-direction: row;
+
+    justify-content: center;
+
+    margin-top: 25px;
+  }
+
+  .content {
+    margin-left: 0;
+
+    width: 100%;
+
+    padding: 40px 25px;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    text-align: center;
+  }
+}
+
+/* =========================
+   SECTION ANIMATION
+========================= */
+
+.fade-section {
+  opacity: 0;
+
+  transform: translateY(20px);
+
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+/* =========================
+   RESEARCH PAGE
+========================= */
+
+.research-item {
+  margin-bottom: 35px;
+}
+
+.research-meta {
+  color: #2563eb;
+
+  font-weight: 500;
+
+  margin-bottom: 15px;
+}
+
+.research-item ul {
+  margin: 15px 0 20px 25px;
+}
+
+.research-item li {
+  margin-bottom: 8px;
+}
+
+.tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.tags span {
+  background: #eff6ff;
+
+  color: #1d4ed8;
+
+  padding: 5px 12px;
+
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+
+  font-weight: 500;
+}
+
+/* =========================
+   MISC
+========================= */
+
+.contact-email {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.contact-info a {
+    overflow-wrap: anywhere;
+    color: inherit;
+}
