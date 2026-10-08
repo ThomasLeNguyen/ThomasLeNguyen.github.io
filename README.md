@@ -14,7 +14,6 @@ I am a Computer Science and Mathematics student interested in:
 - Data Science
 - Machine Learning
 - Computer Vision
-- Medical AI
 - Agentic AI
 - Modeling and Simulation
 
